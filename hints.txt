@@ -1,0 +1,11 @@
+
+android create project --target 1 --name a2vnc --path a2vnc --activity A2VNC --package org.nondoc.android.a2vnc
+
+export PATH=/usr/local/android-sdk-linux_86/tools/:$PATH
+
+emulator -avd A1.6b
+
+ant debug
+
+adb install -r ./bin/a2vnc-debug.apk
+
